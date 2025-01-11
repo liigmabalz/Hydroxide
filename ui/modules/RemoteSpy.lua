@@ -65,6 +65,7 @@ local icons = {
     BindableEvent = "rbxassetid://70425784049266", -- 4229809371
     BindableFunction = "rbxassetid://109302544925686"
 }
+
 local constants = {
     fadeLength = TweenInfo.new(0.15),
     textWidth = Vector2.new(1337420, 20),
@@ -434,7 +435,7 @@ function Log.adjust(log)
 
     local callWidth = TextService:GetTextSize(logInstance.Calls.Text, 18, "SourceSans", constants.textWidth).X + 10
     local iconPosition = callWidth - (((remoteClassName == "RemoteEvent" or remoteClassName == "BindableEvent") and 4) or 0)
-    local labelWidth = iconPosition + 21
+    local labelWidth = iconPosition + 18-- 21
 
     logInstance.Calls.Size = UDim2.new(0, callWidth, 1, 0)
     logIcon.Position = UDim2.new(0, iconPosition, 0.5, (remoteClassName == "RemoteEvent" and -9) or -7)
