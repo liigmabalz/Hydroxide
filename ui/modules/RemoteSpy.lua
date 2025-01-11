@@ -62,7 +62,7 @@ local icons = {
     unignore = "rbxassetid://4842578818",
     RemoteEvent = "rbxassetid://120968494043889", -- 4229806545
     RemoteFunction = "rbxassetid://76491890194535", -- 4229810474
-    BindableEvent = "rbxassetid://4229809371",
+    BindableEvent = "rbxassetid://70425784049266", -- 4229809371
     BindableFunction = "rbxassetid://4229807624"
 }
 
