@@ -9,7 +9,7 @@ local List, ListButton = import("ui/controls/List")
 local MessageBox, MessageType = import("ui/controls/MessageBox")
 local ContextMenu, ContextMenuButton = import("ui/controls/ContextMenu")
 
-local Page = import("rbxassetid://81417807894535").Base.Body.Pages.ModuleScanner -- 11389137937
+local Page = import("rbxassetid://95902980128257").Base.Body.Pages.ModuleScanner -- 95902980128257
 local Assets = import("rbxassetid://5042114982").ModuleScanner
 
 local Query = Page.Query

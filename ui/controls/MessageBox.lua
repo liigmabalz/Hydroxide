@@ -1,6 +1,6 @@
 local TextService = game:GetService("TextService")
 
-local Interface = import("rbxassetid://81417807894535")
+local Interface = import("rbxassetid://95902980128257")
 local Base = Interface.Base
 local Object = Base.MessageBox
 local Shadow = Base.MessageBoxShadow
