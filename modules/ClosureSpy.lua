@@ -57,7 +57,7 @@ function Hook.new(closure)
         local uData = wrap[2]
 
         if not uHook.Ignored and not uHook:AreArgsIgnored(vargs) then
-            log(uHook, getCallingScript(), ...)
+            log(uHook, getcallingscript(), ...)
         end
 
         if not uHook.Blocked and not uHook:AreArgsBlocked(vargs) then
