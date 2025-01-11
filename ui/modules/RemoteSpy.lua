@@ -434,7 +434,7 @@ function Log.adjust(log)
     local logIcon = logInstance.Icon
 
     local callWidth = TextService:GetTextSize(logInstance.Calls.Text, 18, "SourceSans", constants.textWidth).X + 10
-    local iconPosition = callWidth - (((remoteClassName == "Remote" or remoteClassName == "Bindable") and 4) or 0)
+    local iconPosition = callWidth - (((remoteClassName == "RemoteEvent" or remoteClassName == "BindableEvent") and 4) or 0)
     local labelWidth = iconPosition + 21
 
     logInstance.Calls.Size = UDim2.new(0, callWidth, 1, 0)
