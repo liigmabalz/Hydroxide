@@ -60,7 +60,7 @@ local icons = {
     unblock = "rbxassetid://4891642508",
     ignore = "rbxassetid://4842578510",
     unignore = "rbxassetid://4842578818",
-    RemoteEvent = "rbxassetid://110581900448982",
+    RemoteEvent = "rbxassetid://120968494043889",
     RemoteFunction = "rbxassetid://4229810474",
     BindableEvent = "rbxassetid://4229809371",
     BindableFunction = "rbxassetid://4229807624"
@@ -924,7 +924,7 @@ repeatCallContext:SetCallback(function()
     local oldStatus = oh.getStatus()
     oh.setStatus("Recalling " .. remoteInstance.Name)
 
-    remoteInstance[method](remoteInstance, unpack(selected.args))
+    remoteInstance[method](remoteInstance, unpack(selected.args or {})) -- in case argument is nil remoteInstance[method](remoteInstance, unpack(selected.args))
 
     wait(0.25)
 
